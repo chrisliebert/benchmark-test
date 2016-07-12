@@ -1,0 +1,44 @@
+#!/bin/bash
+# Copyright 2016 Chris Liebert
+# This script demonstrates the differences in language performance
+
+echo 'Python 3'
+time python3 wertziel.py
+
+
+echo 'LUA'
+time lua wertziel.lua
+
+
+echo 'LuaJIT'
+time luajit wertziel.lua
+
+
+echo 'Java VM'
+javac Wertziel.java
+time java Wertziel
+
+
+echo 'Compiling with GCJ'
+# Compile java to native code with varying levels of optimisation
+gcj Wertziel.java --main=Wertziel -o wertziel_default
+gcj Wertziel.java --main=Wertziel -O2 -o wertziel_O2
+gcj Wertziel.java --main=Wertziel -O3 -o wertziel_O3
+gcj Wertziel.java --main=Wertziel -O4 -o wertziel_O4
+
+
+echo 'Default GCJ'
+time ./wertziel_default
+
+
+echo 'GCJ -O2'
+time ./wertziel_O2
+
+
+echo 'GCJ -O3'
+time ./wertziel_O3
+
+
+echo 'GCJ -O4'
+time ./wertziel_O4
+
