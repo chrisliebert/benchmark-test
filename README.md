@@ -4,7 +4,7 @@
 This includes multiple implementations of an algorithm for solving an arbitrary problem that 
 involves determining what compounds can be produced from materials X, Y and Z.
 There are 8 different products that can be built from materials X, Y and Z:
-XXXYYYZ, YYZZZZZ, XXXXXXZZ, XXYYYYYYZ, YZZ, X, Y, Z
+XXXYYYZ, YYZZZZZ, XXXXXXZZ, XXYYYYYYZ, YZZ, X, Y, and Z.
 
 The intention is to determine which set of combinations will yield the least number of products.
 
