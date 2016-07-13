@@ -1,6 +1,6 @@
 #!/bin/bash
 # Copyright (C) 2016 Chris Liebert
-# This script demonstrates the differences in language performance
+# This script demonstrates differences in language performance
 
 echo 'Python 3'
 time python3 wertziel.py
