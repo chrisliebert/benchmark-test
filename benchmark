@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright 2016 Chris Liebert
+# Copyright (C) 2016 Chris Liebert
 # This script demonstrates the differences in language performance
 
 echo 'Python 3'
