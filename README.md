@@ -15,3 +15,6 @@ There are three versions of the N^8th algorithm included here, they are implemen
 Running the benchmark script indicates Java and LuaJIT will execute the algorithm close to ~48X faster than Python.
 By using the GNU GCJ compiler with optimisations, the runtime can be reduced by half.
 
+
+**License:**
+This program and it's source are availible under the "MIT License" please see LICENSE
