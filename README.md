@@ -1,4 +1,4 @@
-// Copyright (C) Chris Liebert
+// Copyright (C) 2016 Chris Liebert
 # benchmark-test
 
 This includes multiple implementations of an algorithm for solving an arbitrary problem that 
