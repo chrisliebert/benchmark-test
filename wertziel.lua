@@ -143,7 +143,7 @@ function printColumns()
 end
 
 
-function printConglomerates(x, y, z, n)
+function printConglomerates(x, y, z)
   conglomerates, cardinality = getConglomerates(x, y, z)
   if conglomerates == nil then return end
   str = ''
