@@ -1,7 +1,7 @@
 // Copyright (C) Chris Liebert
 # benchmark-test
 
-This includes multiple implementations of and algorithm for solving an arbitrary problem that 
+This includes multiple implementations of an algorithm for solving an arbitrary problem that 
 involves determining what compounds can be produced from materials X, Y and Z.
 There are 8 different products that can be built from materials X, Y and Z:
 XXXYYYZ, YYZZZZZ, XXXXXXZZ, XXYYYYYYZ, YZZ, X, Y, Z
