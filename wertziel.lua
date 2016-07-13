@@ -1,8 +1,7 @@
 -- Copyright (C) 2016 Chris Liebert
 
 function getConglomerates(x, y, z)
-
-  --a, b, c, d, e, f, g, h = 0, 0, 0, 0, 0, 0, 0, 0
+  
   collections = {}
   num_collections = 0
 
