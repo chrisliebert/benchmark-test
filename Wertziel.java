@@ -11,46 +11,45 @@ class Wertziel {
 		List<int[]> collections = new ArrayList<int[]>();
 		int a, b, c, d, e, f, g, h = 0;
 		a = 0;
-		while (loopInv(x, y, z)) {
+		while (((x >= 0) && (y >= 0) && (z >= 0))) {
 			b = 0;
 			int bx = x;
 			int by = y;
 			int bz = z;
-			while (loopInv(x, y, z)) {
+			while (((x >= 0) && (y >= 0) && (z >= 0))) {
 				c = 0;
 				int cx = x;
 				int cy = y;
 				int cz = z;
-				while (loopInv(x, y, z)) {
+				while (((x >= 0) && (y >= 0) && (z >= 0))) {
 					d = 0;
 					int dx = x;
 					int dy = y;
 					int dz = z;
-					while (loopInv(x, y, z)) {
+					while (((x >= 0) && (y >= 0) && (z >= 0))) {
 						e = 0;
 						int ex = x;
 						int ey = y;
 						int ez = z;
-						while (loopInv(x, y, z)) {
+						while (((x >= 0) && (y >= 0) && (z >= 0))) {
 							f = 0;
 							int fx = x;
 							int fy = y;
 							int fz = z;
-							while (loopInv(x, y, z)) {
+							while (((x >= 0) && (y >= 0) && (z >= 0))) {
 								g = 0;
 								int gx = x;
 								int gy = y;
 								int gz = z;
-								while (loopInv(x, y, z)) {
+								while (((x >= 0) && (y >= 0) && (z >= 0))) {
 									h = 0;
 									int hx = x;
 									int hy = y;
 									int hz = z;
-									while (loopInv(x, y, z)) {
+									while (((x >= 0) && (y >= 0) && (z >= 0))) {
 										if ((x == 0) && (y == 0) && (z == 0)) {
 											int collection[] = { a, b, c, d, e, f, g, h };
 											collections.add(collection);
-											//System.out.println("Adding congl:");
 										}
 										y -= 1;
 										z -= 2;
@@ -121,10 +120,6 @@ class Wertziel {
 		}
 		s += minCard + "\t" + xbackup + "\t" + ybackup + "\t" + zbackup;
 		System.out.println(s);
-	}
-
-	private boolean loopInv(int x, int y, int z) {
-		return ((x >= 0) && (y >= 0) && (z >= 0));
 	}
 
 	public static void main(String[] args) {

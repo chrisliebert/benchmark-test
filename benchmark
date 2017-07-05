@@ -1,9 +1,13 @@
 #!/bin/bash
-# Copyright (C) 2016 Chris Liebert
+# Copyright (C) 2017 Chris Liebert
 # This script demonstrates differences in language performance
 
 echo 'Python 3'
 time python3 wertziel.py
+
+
+echo 'PyPy Python'
+time pypy wertziel.py
 
 
 echo 'LUA'
@@ -17,6 +21,11 @@ time luajit wertziel.lua
 echo 'Java VM'
 javac Wertziel.java
 time java Wertziel
+
+
+echo 'Mono VM'
+mcs Wertziel.cs -out:wertzielcs.exe
+time mono wertzielcs.exe
 
 
 echo 'Compiling with GCJ'
