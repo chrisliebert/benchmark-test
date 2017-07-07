@@ -16,7 +16,7 @@ function getConglomerates(x, y, z)
 
   -- Get all conglamorations
   a = 0
-  while (x >= 0) and (y >= 0) and (z >= 0) do
+  while x >= 0 and y >= 0 and z >= 0 do
     b = 0
     bx, by, bz = x, y, z
     while x >= 0 and y >= 0 and z >= 0 do

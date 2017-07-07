@@ -9,7 +9,7 @@ namespace wertziel {
             int ybackup = y;
             int zbackup = z;
             List<int[]> collections = new List<int[]>();
-            int a, b, c, d, e, f, g, h = 0;
+            int a, b, c, d, e, f, g, h;
             a = 0;
             while (((x >= 0) && (y >= 0) && (z >= 0))) {
                 b = 0;
