@@ -18,7 +18,7 @@ The Lua interpreter performance doesn't come close to that of LuaJIT, however it
 The Python execution can be sped up by using the Pypy JIT, although it is still the slowest JIT tested.
 Java performance was more than doubled when using GNU GCJ compiler with optimisations.
 
-Note: This benchmark not indicate which platform is better or faster since they address different concerns.
+Note: This benchmark does not indicate which platform is better or faster since they address different concerns.
 
 **License:**
 This program and it's source are availible under the "MIT License" please see LICENSE
