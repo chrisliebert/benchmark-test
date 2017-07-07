@@ -2,12 +2,16 @@
 # Copyright (C) 2017 Chris Liebert
 # This script demonstrates differences in language performance
 
-echo 'Python 3'
-time python3 wertziel.py
+echo 'Python'
+time python wertziel.py
 
 
 echo 'PyPy Python'
 time pypy wertziel.py
+
+
+echo 'Node JavaScript'
+time node Wertziel.js
 
 
 echo 'LUA'
@@ -18,14 +22,14 @@ echo 'LuaJIT'
 time luajit wertziel.lua
 
 
-echo 'Java VM'
-javac Wertziel.java
-time java Wertziel
-
-
 echo 'Mono VM'
 mcs Wertziel.cs -out:wertzielcs.exe
 time mono wertzielcs.exe
+
+
+echo 'Java VM'
+javac Wertziel.java
+time java Wertziel
 
 
 echo 'Compiling with GCJ'
@@ -51,3 +55,12 @@ time ./wertziel_O3
 echo 'GCJ -O4'
 time ./wertziel_O4
 
+
+echo 'Rust'
+rustc Wertziel.rs -o WertzielRust
+time ./WertzielRust
+
+
+echo 'Optimized Rust'
+rustc -O Wertziel.rs -o WertzielRustOptimized
+time ./WertzielRustOptimized
